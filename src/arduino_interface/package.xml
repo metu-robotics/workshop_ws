@@ -3,13 +3,15 @@
 <package format="3">
   <name>arduino_interface</name>
   <version>0.0.0</version>
-  <description>TODO: Package description</description>
-  <maintainer email="rs@todo.todo">rs</maintainer>
-  <license>TODO: License declaration</license>
+  <description>Interface package for Arduino communication</description>
+  <maintainer email="aria.karimi@metu.edu.tr">Aria Karimi</maintainer>
+  <license>MIT</license>
 
   <depend>rclpy</depend>
   <depend>std_msgs</depend>
   <depend>geometry_msgs</depend>
+  <depend>robot_interfaces</depend>
+
 
   <test_depend>ament_copyright</test_depend>
   <test_depend>ament_flake8</test_depend>
