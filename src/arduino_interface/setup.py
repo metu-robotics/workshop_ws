@@ -24,6 +24,7 @@ setup(
     },
     entry_points={
         'console_scripts': [
+        'serial_node = arduino_interface.serial_node:main'
         ],
     },
 )
