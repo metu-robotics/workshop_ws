@@ -1,0 +1,26 @@
+# ROS2 / Colcon build system
+build/
+install/
+log/
+
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+*.pdb
+*.egg-info/
+*.so
+
+# Jetson / CUDA / system artifacts
+*.swp
+*.swo
+
+# VSCode
+.vscode/
+
+# PlatformIO (if you use it for Arduino)
+.pio/
+
+# Backup files
+*~
