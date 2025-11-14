@@ -25,6 +25,7 @@ setup(
     entry_points={
         'console_scripts': [
         'camera_node = camera_yolo.camera_node:main'
+        'yolo_node = camera_yolo.yolo_node:main'
         ],
     },
 )

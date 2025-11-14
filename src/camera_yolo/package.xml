@@ -4,8 +4,8 @@
   <name>camera_yolo</name>
   <version>0.0.0</version>
   <description>TODO: Package description</description>
-  <maintainer email="rs@todo.todo">rs</maintainer>
-  <license>TODO: License declaration</license>
+  <maintainer email="aria.karimi@metu.edu.tr">Aria Karimi</maintainer>
+  <license>MIT</license>
 
   <depend>rclpy</depend>
   <depend>sensor_msgs</depend>
