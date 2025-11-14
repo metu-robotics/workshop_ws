@@ -11,6 +11,11 @@ class RobotControlNode(Node):
     def __init__(self):
         super().__init__("robot_control")
 
+        self.declare_parameter("move_duration", 1.0)
+        self.declare_parameter("forward_speed", 0.7)
+        self.declare_parameter("backward_speed", -0.7)
+        self.declare_parameter("turn_speed", 2.0)
+
         # ---------------------------------------------------------
         # Publisher
         # ---------------------------------------------------------

@@ -28,7 +28,7 @@ class YoloNode(Node):
 
         # Load YOLO model
         self.get_logger().info("Loading YOLO model...")
-        self.model = YOLO("yolov8n.pt")   # replace with your model file
+        self.model = YOLO("/home/rs/models/yolov8n.pt") # change path as needed
 
         self.get_logger().info("YOLO node initialized.")
 

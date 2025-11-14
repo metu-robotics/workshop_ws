@@ -14,9 +14,9 @@ def generate_launch_description():
 
             # Parameters for easy tuning
             parameters=[
-                {"forward_speed": 0.20},
-                {"backward_speed": -0.20},
-                {"turn_speed": 0.50},
+                {"forward_speed": 0.7},
+                {"backward_speed": -0.7},
+                {"turn_speed": 2.0},
                 {"move_duration": 1.0},
             ]
         )

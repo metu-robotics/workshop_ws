@@ -94,8 +94,8 @@ class ArduinoInterfaceNode(Node):
     #     CMDVEL:<lin>,<ang>
     # =============================================================
     def cmd_vel_callback(self, msg: Twist):
-        lin = msg.linear.x
-        ang = msg.angular.z
+        lin = - msg.linear.x
+        ang = - msg.angular.z
 
         cmd = f"CMDVEL:{lin:.3f},{ang:.3f}"
         self.send_to_arduino(cmd)
