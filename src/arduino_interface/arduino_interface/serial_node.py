@@ -12,6 +12,10 @@ class ArduinoInterfaceNode(Node):
     def __init__(self):
         super().__init__('arduino_interface')
 
+        self.declare_parameter("port")
+        self.declare_parameter("baudrate")
+
+
         # ---------------------------------------------------------
         # Publishers
         # ---------------------------------------------------------

@@ -3,9 +3,11 @@ from launch_ros.actions import Node
 
 
 ARDUINOPORT = '/dev/ttyCH341USB0'  # modify as needed
+BAUDRATE = 115200
 
 def generate_launch_description():
     port = ARDUINOPORT
+    baudrate = BAUDRATE
     return LaunchDescription([
         # ------------------------------------------------------------
         # Start the Arduino serial interface node
@@ -17,7 +19,7 @@ def generate_launch_description():
             output="screen",
             parameters=[
                 {"port": port},
-                {"baudrate": 115200}
+                {"baudrate": baudrate}
             ]
         ),
     ])
