@@ -27,4 +27,10 @@ setup(
         'serial_node = arduino_interface.serial_node:main'
         ],
     },
+    data_files=[
+        ('share/ament_index/resource_index/packages',
+            ['resource/arduino_interface']),
+        ('share/arduino_interface/launch', ['launch/arduino.launch.py']),
+        ('share/arduino_interface', ['package.xml']),
+    ],
 )

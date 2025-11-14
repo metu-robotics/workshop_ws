@@ -26,4 +26,10 @@ setup(
         'console_scripts': [
         ],
     },
+    data_files=[
+        ('share/ament_index/resource_index/packages',
+            ['resource/robot_control']),
+        ('share/robot_control/launch', ['launch/robot_control.launch.py']),
+        ('share/robot_control', ['package.xml']),
+    ],
 )

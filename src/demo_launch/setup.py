@@ -26,4 +26,10 @@ setup(
         'console_scripts': [
         ],
     },
+    data_files=[
+        ('share/ament_index/resource_index/packages',
+            ['resource/demo_launch']),
+        ('share/demo_launch/launch', ['launch/bringup.launch.py']),
+        ('share/demo_launch', ['package.xml']),
+    ],
 )
