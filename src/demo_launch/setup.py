@@ -9,6 +9,7 @@ setup(
     data_files=[
         ('share/ament_index/resource_index/packages',
             ['resource/' + package_name]),
+        ('share/' + package_name + '/launch', ['launch/bringup.launch.py']),
         ('share/' + package_name, ['package.xml']),
     ],
     install_requires=['setuptools'],
@@ -26,10 +27,4 @@ setup(
         'console_scripts': [
         ],
     },
-    data_files=[
-        ('share/ament_index/resource_index/packages',
-            ['resource/demo_launch']),
-        ('share/demo_launch/launch', ['launch/bringup.launch.py']),
-        ('share/demo_launch', ['package.xml']),
-    ],
 )

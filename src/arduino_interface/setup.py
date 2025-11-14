@@ -9,6 +9,7 @@ setup(
     data_files=[
         ('share/ament_index/resource_index/packages',
             ['resource/' + package_name]),
+        ('share/' + package_name + '/launch', ['launch/arduino.launch.py']),
         ('share/' + package_name, ['package.xml']),
     ],
     install_requires=['setuptools'],
@@ -27,10 +28,4 @@ setup(
         'serial_node = arduino_interface.serial_node:main'
         ],
     },
-    data_files=[
-        ('share/ament_index/resource_index/packages',
-            ['resource/arduino_interface']),
-        ('share/arduino_interface/launch', ['launch/arduino.launch.py']),
-        ('share/arduino_interface', ['package.xml']),
-    ],
 )
