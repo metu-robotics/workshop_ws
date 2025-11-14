@@ -8,10 +8,6 @@ import serial
 import threading
 import time
 
-ARDUINOPORT = '/dev/ttyCH341USB0'  # modify as needed
-BAUDRATE = 115200
-
-
 class ArduinoInterfaceNode(Node):
     def __init__(self):
         super().__init__('arduino_interface')
@@ -34,8 +30,8 @@ class ArduinoInterfaceNode(Node):
         # ---------------------------------------------------------
         # Serial connection (Jetson CH341 clone port)
         # ---------------------------------------------------------
-        port = ARDUINOPORT
-        baud = BAUDRATE
+        port = self.get_parameter("port").get_parameter_value().string_value
+        baud = self.get_parameter("baudrate").get_parameter_value().integer_value
 
         try:
             self.ser = serial.Serial(port, baud, timeout=0.1)

@@ -13,10 +13,10 @@ setup(
     ],
     install_requires=['setuptools'],
     zip_safe=True,
-    maintainer='rs',
-    maintainer_email='rs@todo.todo',
-    description='TODO: Package description',
-    license='TODO: License declaration',
+    maintainer='Aria Karimi',
+    maintainer_email='aria.karimi@metu.edu.tr',
+    description='Camera and YOLO integration for ROS 2',
+    license='MIT',
     extras_require={
         'test': [
             'pytest',
@@ -24,7 +24,7 @@ setup(
     },
     entry_points={
         'console_scripts': [
-        'camera_node = camera_yolo.camera_node:main'
+        'camera_node = camera_yolo.camera_node:main',
         'yolo_node = camera_yolo.yolo_node:main'
         ],
     },

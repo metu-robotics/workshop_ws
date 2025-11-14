@@ -13,10 +13,10 @@ setup(
     ],
     install_requires=['setuptools'],
     zip_safe=True,
-    maintainer='rs',
-    maintainer_email='rs@todo.todo',
-    description='TODO: Package description',
-    license='TODO: License declaration',
+    maintainer='Aria Karimi',
+    maintainer_email='aria.karimi@metu.edu.tr',
+    description='Interface for Arduino communication',
+    license='MIT',
     extras_require={
         'test': [
             'pytest',
